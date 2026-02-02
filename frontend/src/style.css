@@ -1,0 +1,96 @@
+/* 기본 초기화 및 배경 설정 */
+:root {
+  font-family: 'Pretendard', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  background-color: #0d1117; /* 메인 배경색 */
+  color: #c9d1d9; /* 기본 글자색 */
+}
+
+body {
+  margin: 0;
+  display: block; /* 가로 중앙 정렬을 위해 수정 */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* --- FullCalendar 커스텀 스타일 --- */
+
+/* 1. 달력 상단 툴바 (제목, 버튼) */
+.fc .fc-toolbar-title {
+  color: #58a6ff !important; /* "2026년 1월" 같은 제목 색상 */
+  font-size: 1.5em !important;
+  font-weight: bold;
+}
+
+/* 2. 이전/다음/오늘 버튼 스타일 */
+.fc .fc-button {
+  background-color: #21262d !important;
+  border: 1px solid #30363d !important;
+  color: #ffffff !important; /* 버튼 글자색 하얀색 */
+  text-transform: capitalize;
+  transition: background-color 0.2s;
+}
+
+.fc .fc-button:hover {
+  background-color: #30363d !important;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, 
+.fc .fc-button-primary:not(:disabled):active {
+  background-color: #1f6feb !important; /* 활성화된 버튼 색상 */
+  border-color: #388bfd !important;
+}
+
+/* 3. 화살표 아이콘 (핵심 수정 사항) */
+.fc .fc-icon {
+  color: #ffffff !important; /* 검은색 아이콘을 하얀색으로 강제 변경 */
+}
+
+/* 4. 요일 헤더 (월, 화, 수...) */
+.fc .fc-col-header-cell-cushion {
+  color: #8b949e !important;
+  text-decoration: none !important;
+  padding: 10px 0 !important;
+}
+
+/* 5. 날짜 숫자 */
+.fc .fc-daygrid-day-number {
+  color: #c9d1d9 !important; /* 날짜 숫자를 밝게 */
+  text-decoration: none !important;
+  padding: 8px !important;
+}
+
+/* 6. 오늘 날짜 하이라이트 */
+.fc .fc-day-today {
+  background-color: rgba(56, 139, 253, 0.15) !important; /* 연한 파란색 배경 */
+}
+
+/* 7. 달력 테두리 선 색상 */
+.fc td, .fc th {
+  border-color: #30363d !important;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border-color: #30363d !important;
+}
+
+/* 8. 일정(Event) 스타일 - 글자색 하얀색 고정 */
+.fc-event {
+  cursor: pointer;
+  border: none !important;
+  padding: 2px 4px !important;
+  border-radius: 4px !important;
+}
+
+.fc-event-title {
+  font-weight: 500 !important;
+  color: #ffffff !important;
+}
+
+/* 9. 모달 입력창 스타일 (컴포넌트 내 스타일 보조) */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* 날짜 선택 아이콘도 하얀색으로 */
+  cursor: pointer;
+}
