@@ -38,8 +38,6 @@ node index.js
 
 ### 구조도
 
-### 구조도
-
 ```text
 frontend
 ├─ src/
@@ -59,7 +57,7 @@ frontend
 │
 backend
 └─ index.js                  # Express API 서버
-
+```
 
 ### 과정
 
@@ -78,4 +76,3 @@ Postman을 이용한 백엔드 API 테스트
 
 Week 4
 검색 및 카테고리 기능 추가
-```
