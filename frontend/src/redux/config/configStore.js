@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit"; // 리덕스 창고를 만드는 도구
-import calendarReducer from "../modules/calendarSlice"; // 우리가 만든 일정 관리 로직
+import calendarReducer from "../modules/calendarSlice"; // 우리가 만든 일정 관리 로직 로드
 
 const store = configureStore({
   // 1. reducer: 창고 안에 어떤 섹션(부서)을 만들지 정합니다.
