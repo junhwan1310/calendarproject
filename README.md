@@ -34,7 +34,10 @@ npm run dev
 
 ### 백엔드
 
-node index.js
+```bash
+npm install
+npm run dev
+```
 
 ### 구조도
 
