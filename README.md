@@ -38,24 +38,28 @@ node index.js
 
 ### 구조도
 
+### 구조도
+
+```text
 frontend
 ├─ src/
 │ ├─ pages/
-│ │ └─ CalendarPage.jsx # 달력 메인 화면
+│ │ └─ CalendarPage.jsx      # 달력 메인 화면
 │ ├─ components/
-│ │ ├─ EventModal.jsx # 일정 등록/수정 모달
+│ │ ├─ EventModal.jsx        # 일정 등록/수정 모달
 │ │ ├─ Header.jsx
 │ │ └─ Footer.jsx
 │ ├─ redux/
 │ │ ├─ config/
-│ │ │ └─ configStore.js # Redux Store 설정
+│ │ │ └─ configStore.js      # Redux Store 설정
 │ │ └─ modules/
-│ │ └─ calendarSlice.js # 일정 CRUD 상태 관리
+│ │   └─ calendarSlice.js    # 일정 CRUD 상태 관리
 │ ├─ App.jsx
 │ └─ main.jsx
 │
 backend
-└─ index.js # Express API 서버
+└─ index.js                  # Express API 서버
+
 
 ### 과정
 
@@ -74,3 +78,4 @@ Postman을 이용한 백엔드 API 테스트
 
 Week 4
 검색 및 카테고리 기능 추가
+```
