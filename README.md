@@ -62,21 +62,21 @@ backend
 └─ index.js                  # Express API 서버
 ```
 
-### 과정
+## 과정
 
-Week 1
-FullCalendar를 이용한 달력 화면 구현
+- **Week 1**  
+  FullCalendar를 이용한 달력 화면 구현
 
-Week 2
-일정 조회 / 등록 / 수정 / 삭제 기능 구현 (CRUD)
-모달을 이용한 일정 입력 및 관리
+- **Week 2**  
+  일정 조회 / 등록 / 수정 / 삭제 기능 구현 (CRUD)  
+  모달을 이용한 일정 입력 및 관리
 
-Week 3
-Express 기반 REST API 구현
-Firestore DB 연동
-Postman을 이용한 백엔드 API 테스트
-새로고침 후에도 데이터 유지 확인
+- **Week 3**  
+  Express 기반 REST API 구현  
+  Firestore DB 연동  
+  Postman을 이용한 백엔드 API 테스트  
+  새로고침 후 데이터 유지 확인
 
-Week 4
-검색 및 카테고리 필터 기능 추가
-기존 검색 로직 및 화면 반영 문제 개선
+- **Week 4**  
+  검색 및 카테고리 필터 기능 추가  
+  기존 검색 로직 및 화면 반영 문제 개선
